@@ -31,7 +31,10 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/did-siop-bundle.js"
+              "src/assets/did-siop-bundle.js",
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
