@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/did-siop-bundle.js"
+            ]
           },
           "configurations": {
             "production": {
