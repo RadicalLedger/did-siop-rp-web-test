@@ -1,0 +1,9 @@
+<div class="container-fluid mt-5">
+  <div class="d-flex justify-content-center">
+    <h4 *ngIf="did_user">Logged in as {{did_user}}</h4>
+    <div *ngIf="did_error">
+        <h4>Error: {{did_error.error}}</h4>
+        <h4>Description: {{did_error.description}}</h4>
+    </div>
+  </div>
+</div>
