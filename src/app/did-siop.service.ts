@@ -13,7 +13,7 @@ export class DidSiopService {
     this.siop_rp = new DID_SIOP.RP();
 
     this.siop_rp.initialize(
-      'localhost:4200/home', // RP redirect uri
+      'https://did-siop-rp-test.herokuapp.com/home', // RP redirect uri
       'did:ethr:0xB07Ead9717b44B6cF439c474362b9B0877CBBF83',// RP DID
       {
         "jwks_uri": "https://uniresolver.io/1.0/identifiers/did:example:0xab;transform-keys=jwks",
