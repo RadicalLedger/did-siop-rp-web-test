@@ -31,7 +31,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/did-siop.bundle.js",
+              "src/assets/did-siop.bundle.compiled.minified.js",
               "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
