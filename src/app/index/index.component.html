@@ -1,5 +1,20 @@
-<div class="container-fluid mt-5">
-  <div class="d-flex justify-content-center">
+<div class="container-fluid mt-4 d-flex flex-column align-items-center">
+  <div>
     <button class="btn btn-large btn-success" (click)="didSIOPLogin()">DID SIOP Login</button>
+  </div>
+  <div class="important d-flex flex-column align-items-center mt-2">
+    <h4 class="mb-0"><small>Important</small></h4>
+    <p class="mt-0  text-center chrome-v">This application works only on Google Chrome and has tested on Version 80.0.3987.163 (Official Build) (64-bit)</p>
+    <p class="mt-2  text-center extension-check">Please make sure you have installed the Chrome Extension DID-SIOP before trying to login. You could
+      <a href="https://drive.google.com/file/d/1JdUYNxjan7pE_W4qB4dUHZdCuG1_056s/view?usp=sharing">download it
+        here</a></p>
+  </div>
+  <div class="resources d-flex flex-column align-items-center mt-5">
+    <h4 class="text-primary"><u>Resources</u></h4>
+    <p class="small mt-2 mb-0"><a href="https://identity.foundation/did-siop/">- DID SIOP Specification</a></p>
+    <p class="small mt-0 mb-0"><a href="https://github.com/RadicalLedger/did-siop-chrome-ext">- Source Code for Browser Extension</a></p>
+    <p class="small mt-0 mb-0"><a href="https://github.com/RadicalLedger/did-siop-rp-web-test">- Sourcecode for Relying
+        Party sample application (this
+        application)</a></p>
   </div>
 </div>
