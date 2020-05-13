@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { Injectable } from '@angular/core';
 import * as DID_SIOP from 'did-siop';
 
@@ -9,9 +10,10 @@ export class DidSiopService {
   private siop_rp: any = undefined;
 
   async checkAndInit(){
+    console.log(environment.production);
     if(this.siop_rp === undefined){
         this.siop_rp = await DID_SIOP.RP.getRP(
-          'localhost:4200/home', // RP's redirect_uri
+          environment.redirect_uri, // RP's redirect_uri
           'did:ethr:0xB07Ead9717b44B6cF439c474362b9B0877CBBF83', // RP's did
           {
             "jwks_uri": "https://uniresolver.io/1.0/identifiers/did:example:0xab;transform-keys=jwks",
