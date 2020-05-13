@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(public did_siop: DidSiopService, location: Location) {
     let response = location.path(true).split('#')[1];
     did_siop.processResponse(response).then(result => {
-      if(result.decodedPayload) this.did_user = result.decodedPayload.did;
+      if(result.payload) this.did_user = result.payload.did;
       if(result.error) this.did_error = result;
       console.log(this.did_error);
     })
