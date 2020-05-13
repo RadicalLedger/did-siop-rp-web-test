@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as DID_SIOP from '../assets/did-siop.bundle.compiled.minified.js';
+import * as DID_SIOP from 'did-siop';
 
 @Injectable({
   providedIn: 'root'
