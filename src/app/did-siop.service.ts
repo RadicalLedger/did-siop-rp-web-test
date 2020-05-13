@@ -10,7 +10,6 @@ export class DidSiopService {
   private siop_rp: any = undefined;
 
   async checkAndInit(){
-    console.log(environment.production);
     if(this.siop_rp === undefined){
         this.siop_rp = await DID_SIOP.RP.getRP(
           environment.redirect_uri, // RP's redirect_uri
