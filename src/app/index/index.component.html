@@ -1,6 +1,6 @@
 <div class="container-fluid mt-4 d-flex flex-column align-items-center">
   <div>
-    <button class="btn btn-large btn-success" (click)="didSIOPLogin()">DID SIOP Login</button>
+    <button class="btn btn-large btn-success" [attr.data-did-siop]="did_siop_request">DID SIOP Login</button>
   </div>
   <div class="important d-flex flex-column align-items-center mt-2">
     <h4 class="mb-0"><small>Important</small></h4>
