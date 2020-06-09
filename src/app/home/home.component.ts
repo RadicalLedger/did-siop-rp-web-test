@@ -11,9 +11,11 @@ export class HomeComponent implements OnInit {
 
   public did_user: string;
   public did_error: any;
+  public responseJWT;
 
   constructor(public did_siop: DidSiopService, location: Location) {
     let response = location.path(true).split('#')[1];
+    this.responseJWT = response;
     did_siop.processResponse(response).then(result => {
       if(result.payload) this.did_user = result.payload.did;
       if(result.error) this.did_error = result;
