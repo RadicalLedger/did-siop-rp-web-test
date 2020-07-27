@@ -1,9 +1,20 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid d-flex flex-column align-items-center home-wrapper">
+  <div class="heading">
+    <h1>Relying Party App Using DID-SIOP</h1>
+  </div>
+  <div class="heading-underline"></div>
   <div class="d-flex justify-content-center">
-    <div *ngIf="did_user" class="success-message d-flex flex-column align-items-center">
+    <div *ngIf="did_user" class="d-flex flex-column align-items-center success-message">
       <h4>Congratulations ! You are successfully authorized to this App</h4>
-      <p class="mt-4 mb-0"><b>Your DID</b></p>
-      <p class="mt-0"><b>{{did_user}}</b></p>
+      <div class="d-flex flex-column justify-content-center align-items-center identity">
+        <p><b>Your DID</b></p>
+        <p><span class="text-muted">{{did_user}}</span></p>
+      </div>
+      <div class="jwt-io">
+        <a href="https://jwt.io/#id_token= + {{responseJWT}}" target="_blank">
+          <img src="assets/jwt-io.svg" alt="jwt io badge">
+        </a>
+      </div>
     </div>
     <div *ngIf="did_error">
         <h4>Error: {{did_error.error}}</h4>

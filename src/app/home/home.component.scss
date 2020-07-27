@@ -1,8 +1,47 @@
+@import '../colors';
+
+.home-wrapper{
+    padding-top: 80px;
+}
+
+.heading{
+    h1{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+.heading-underline{
+    width: 40px;
+    height: 2px;
+    border-bottom: 2px solid $app-primary;
+    margin-bottom: 60px;
+}
+
 .success-message{
     h4{
-        background-color: #32a852;
-        color: white;
-        border-radius: 20px 20px 20px 20px;
-        height: 40px;
+        color: $app-primary;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+}
+
+.identity{
+    width: 550px;
+    height: 100px;
+    margin-bottom: 40px;
+    background-color: $app-section-background;
+    p{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+.jwt-io{
+    a{
+        img{
+            width: 180px;
+        }
     }
 }
