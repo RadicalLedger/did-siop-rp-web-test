@@ -1,5 +1,5 @@
 <div class="container-fluid mt-4 d-flex flex-column align-items-center justify-content-center index-wrapper">
-  <div class="row">
+  <div class="row index-wrapper-row">
     <div class="col-md-4 d-flex flex-column align-items-center justify-content-center login-controls">
       <div class="container-fluid px-0 d-flex flex-column justify-content-center align-items-center">
         <div class="d-flex justify-content-center logo">
@@ -14,19 +14,42 @@
       <div class="heading">
         <h1>Relying Party App Using DID-SIOP</h1>
       </div>
-      <div class="important">
+      <div class="container-fluid px-0 d-flex flex-column important">
         <h5>Important</h5>
-        <p>This application works and tested on Google Chrome, Mozila Firefox and Microsoft Edge browsers. Please make sure you have installed the Extension DID-SIOP before trying to login. You could
-          <a href="https://drive.google.com/drive/folders/1vTUBK9G9A5rmZ_-ZojALi_j0oXoIqjgQ?usp=sharing" target="_blank">download it here </a>
+        <p>This application works and tested on Google Chrome, Mozila Firefox and Microsoft Edge browsers. Please make sure you have installed the Extension DID-SIOP before trying to login. You could download it here.
         </p>
+        <div class="container stores">
+          <div class="row">
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex flex-column store">
+                <a href="{{storesData.chrome.link}}" target="_blank"><fa-icon [icon]="storesData.chrome.icon"></fa-icon></a>
+              </div>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex flex-column store">
+                <a href="{{storesData.fireFox.link}}" target="_blank"><fa-icon [icon]="storesData.fireFox.icon"></fa-icon></a>
+              </div>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex flex-column store">
+                <a href="{{storesData.edge.link}}" target="_blank"><fa-icon [icon]="storesData.edge.icon"></fa-icon></a>
+              </div>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex flex-column store">
+                <a href="{{storesData.drive.link}}" target="_blank"><fa-icon [icon]="storesData.drive.icon"></fa-icon></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="d-flex flex-column resources">
+      <div class="container-fluid px-0 d-flex flex-column resources">
         <h5>Resources</h5>
         <ul>
           <li><a href="https://identity.foundation/did-siop/" target="_blank">DID SIOP Specification</a></li>
           <li><a href="https://github.com/RadicalLedger/did-siop-chrome-ext" target="_blank">Source Code for Browser Extension</a></li>
           <li><a href="https://www.npmjs.com/package/did-siop" target="_blank">did-siop npm library. Used in relying party apps</a></li>
-          <li><a href="https://cdn.jsdelivr.net/npm/did-siop@1.4.1/dist/browser/did-siop.min.js" target="_blank">Library via CDN</a></li>
+          <li><a href="https://cdn.jsdelivr.net/npm/did-siop@1.4.4/dist/browser/did-siop.min.js" target="_blank">Library via CDN</a></li>
           <li><a href="https://github.com/RadicalLedger/did-siop-rp-web-test" target="_blank">Sourcecode for Relying Party sample application (this application)</a></li>
         </ul>
       </div>
