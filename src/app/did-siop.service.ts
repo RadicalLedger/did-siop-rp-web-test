@@ -22,9 +22,9 @@ export class DidSiopService {
 
         this.siop_rp.addSigningParams('CE438802C1F0B6F12BC6E686F372D7D495BC5AA634134B4A7EA4603CB25F0964'); // Private key
 
-        /* 
-        this.siop_rp.setSigningParams('CE438802C1F0B6F12BC6E686F372D7D495BC5AA634134B4A7EA4603CB28F0964'); // invalid Private key
-        */
+
+        // this.siop_rp.addSigningParams('CE438802C1F0B6F12BC6E686F372D7D495BC5AA634134B4A7EA4603CB28F0964'); // invalid Private key
+
     }
   }
 

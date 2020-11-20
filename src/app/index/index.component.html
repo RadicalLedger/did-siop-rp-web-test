@@ -8,6 +8,12 @@
         <div class="d-flex flex-column align-items-center justify-content-center login-btn">
           <button class="btn btn-success btn-large" [attr.data-did-siop]="did_siop_request">Login With Your DID</button>
         </div>
+        <div class="d-flex justify-content-center qr-code">
+          <qrcode [qrdata]="did_siop_request" [width]="280" [errorCorrectionLevel]="'M'"></qrcode>
+        </div>
+        <div class="d-flex justify-content-center ">
+          <p class="header">Or scan this QR with did-siop-mobile app to login !</p>
+        </div>
       </div>
     </div>
     <div class="col-md-8 d-flex flex-column align-items-start info">

@@ -31,6 +31,7 @@ export class IndexComponent implements OnInit {
 
   constructor(public did_siop: DidSiopService) {
     this.did_siop_request = environment.did_siop_request;
+    console.log(this.did_siop_request)
   }
 
   ngOnInit(): void {
