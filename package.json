@@ -29,7 +29,7 @@
     "@popperjs/core": "^2.3.3",
     "bootstrap": "^4.4.1",
     "did-siop": "^1.4.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.5.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
